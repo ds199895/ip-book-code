@@ -9,8 +9,8 @@ y = m.addVar(vtype=GRB.BINARY)
 
 N = len(x)
 
-m.addConstr(sum(x) <= N * y)
-m.addConstr(sum(x) >= N * y - N + 1)
+m.addConstr(sum(x) <= N * y + N - 1)
+m.addConstr(sum(x) >= N * y)
 
 m.optimize()
 print(y.x)
