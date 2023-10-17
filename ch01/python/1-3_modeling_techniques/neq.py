@@ -3,9 +3,10 @@ from gurobipy import GRB
 
 m = gp.Model()
 
-x1 = int(input())
+print("Enter x1:")
+x1 = float(input())
 
-x2 = m.addVar(lb=x1, vtype=GRB.INTEGER)
+x2 = m.addVar(lb=x1, vtype=GRB.CONTINUOUS)
 
 M = 0x3f3f3f3f
 e = 0.001
