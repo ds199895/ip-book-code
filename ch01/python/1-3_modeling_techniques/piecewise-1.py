@@ -20,8 +20,5 @@ m.optimize()
 
 y = l[0].x + 0.9 * l[1].x + 0.8 * l[2].x
 
-
-
-
 print(y)
 
